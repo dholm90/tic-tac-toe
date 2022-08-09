@@ -5,15 +5,63 @@ html {
 
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-items: space-evenly; */
+    gap: 4rem;
+}
+
+header {
+    background-color: mediumblue;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .gameboard {
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(3 1fr); */
-    /* align-content: center; */
+    padding: 2rem;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .field {
-    padding: 2rem;
-    background-color: grey;
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 3rem;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+}
 
+.bt {
+    border-top: none;
+}
+
+.bl {
+    border-left: none;
+}
+
+.br {
+    border-right: none;
+}
+
+.bb {
+    border-bottom: none;
+}
+
+.restart-button {
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    padding: 2rem 3rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+    background-color: mediumblue;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }

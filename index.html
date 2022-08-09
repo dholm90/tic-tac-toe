@@ -10,23 +10,26 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="title">Tic-Tac-Toe</h1>
-    </header>
-    <div class="gameboard">
-        <div class="field" data-index="0">x</div>
-        <div class="field" data-index="0">0</div>
-        <div class="field" data-index="0">0</div>
-        <div class="field" data-index="0">0</div>
-        <div class="field" data-index="0">0</div>
-        <div class="field" data-index="0">0</div>
-        <div class="field" data-index="0">0</div>
-        <div class="field" data-index="0">0</div>
-        <div class="field" data-index="0">x</div>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Tic-Tac-Toe</h1>
+        </header>
+        <div class="gameboard">
+            <div class="field bt bl" data-index="0">0</div>
+            <div class="field bt" data-index="1">1</div>
+            <div class="field bt br" data-index="2">2</div>
+            <div class="field bl" data-index="3">3</div>
+            <div class="field" data-index="4">4</div>
+            <div class="field br" data-index="5">5</div>
+            <div class="field bb bl" data-index="6">6</div>
+            <div class="field bb" data-index="7">7</div>
+            <div class="field bb br" data-index="8">8</div>
+        </div>
+        <div class="controls">
+            <button class="restart-button" id ="restart-button">Restart</button>
+        </div>
     </div>
-    <div class="controls">
-        <button class="restart-button" id ="restart-button">Restart</button>
-    </div>
+    
     
 </body>
 </html>
